@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "simple",
+  "include-component-in-tag": true,
+  "include-v-in-tag": false,
+  "pull-request-header": "Auto-generated release PR: merge to trigger a release",
+  "changelog-path": "docs/history.md",
+  "packages": {
+    ".": {
+      "component": "Google.Cloud.Functions.Framework",
+      "extra-files": [
+        {
+          "type": "xml",
+          "path": "src/CommonProperties.xml",
+          "xpath": "//Project/PropertyGroup/Version"
+        }
+      ]
+    }
+  },
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "Features",
+      "hidden": false
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes",
+      "hidden": false
+    },
+    {
+      "type": "docs",
+      "section": "Documentation",
+      "hidden": false
+    },
+    {
+      "type": "deps",
+      "section": "Dependencies",
+      "hidden": false
+    },
+    {
+      "type": "refactor",
+      "section": "Refactoring",
+      "hidden": true
+    },
+    {
+      "type": "tests",
+      "section": "Tests",
+      "hidden": true
+    },
+    {
+      "type": "chore",
+      "section": "Miscellaneous chores",
+      "hidden": true
+    }
+  ]
+}

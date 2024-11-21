@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AssemblyOriginatorKeyFile>../GoogleApis.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <Nullable>Enable</Nullable>
+  </PropertyGroup>
+
+</Project>
